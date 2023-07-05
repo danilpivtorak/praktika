@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip> // Для функції setprecision
+
+int main() {
+    int t1, t2, t3;
+    std::cin >> t1 >> t2 >> t3;
+
+    double total_time = static_cast<double>(1) / t1 + static_cast<double>(1) / t2 + static_cast<double>(1) / t3;
+    double time_to_eat_pie = 1 / total_time;
+
+    std::cout << std::fixed << std::setprecision(2) << time_to_eat_pie << " годин" << std::endl;
+
+    return 0;
+}
